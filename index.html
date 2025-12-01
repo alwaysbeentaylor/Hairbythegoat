@@ -2,7 +2,10 @@
 <html lang="nl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#1A1412" />
     <title>Hair by the GOAT | Luxe Braids & Weaves</title>
     <meta name="description" content="Gespecialiseerd in Stitch Braids, Cornrows & Precision Black Hair Styling." />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -55,10 +58,56 @@
           -ms-overflow-style: none;
           scrollbar-width: none;
       }
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
       /* Custom selection color for that luxury feel */
       ::selection {
         background-color: #D4AF37;
         color: #1A1412;
+      }
+      /* Mobile optimizations */
+      * {
+        -webkit-tap-highlight-color: transparent;
+      }
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+        /* Prevent horizontal scroll on mobile */
+        position: relative;
+      }
+      /* Ensure touch targets are at least 44x44px */
+      button, a {
+        min-height: 44px;
+        min-width: 44px;
+      }
+      /* iOS safe area support */
+      .safe-area-top {
+        padding-top: env(safe-area-inset-top);
+      }
+      .safe-area-bottom {
+        padding-bottom: env(safe-area-inset-bottom);
+      }
+      /* Better scrolling on mobile */
+      @media (max-width: 768px) {
+        html {
+          -webkit-overflow-scrolling: touch;
+        }
+        /* Prevent text size adjustment on iOS */
+        body {
+          -webkit-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+        }
+      }
+      /* Image optimization */
+      img {
+        max-width: 100%;
+        height: auto;
       }
     </style>
   <script type="importmap">

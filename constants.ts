@@ -4,14 +4,14 @@ import { Instagram, Phone, MessageCircle } from 'lucide-react';
 export const BRAND_NAME = "Hair by the GOAT";
 export const TAGLINE = "Stitch Braids & Luxury Styling";
 
-// Realistic Goat Head (The GOAT) - Close up portrait
-export const LOGO_URL = "https://images.unsplash.com/photo-1556950222-3c81b9576082?q=80&w=200&h=200&auto=format&fit=crop"; 
+// Cute Goat Head Cartoon Character Logo
+export const LOGO_URL = "/cute-goat-head-cartoon-character-free-png.png"; 
 
 export const PRICES: ServiceCategory[] = [
   {
     title: "Stitchbraids",
     // Image focusing on clean stitch lines
-    image: "https://images.unsplash.com/photo-1635368305786-07c39b97b102?q=80&w=1000&auto=format&fit=crop", 
+    image: "/images/photo_1.jpg", 
     items: [
       { name: "6 Stitchbraids", price: "€30,-" },
       { name: "8 Stitchbraids", price: "€35,-" },
@@ -22,7 +22,7 @@ export const PRICES: ServiceCategory[] = [
   {
     title: "Braids",
     // Image of knotless/box braids
-    image: "https://images.unsplash.com/photo-1606410333066-51259250005d?q=80&w=1000&auto=format&fit=crop", 
+    image: "/images/photo_2.jpg", 
     items: [
       { name: "Knotless braids M", price: "€55 - €65,-" },
       { name: "Knotless braids L", price: "€35 - €45,-" },
@@ -34,7 +34,7 @@ export const PRICES: ServiceCategory[] = [
   {
     title: "Weaven",
     // Image of a sleek weave/sew-in
-    image: "https://images.unsplash.com/photo-1582095133179-bfd08d2fc6a8?q=80&w=1000&auto=format&fit=crop", 
+    image: "/images/photo_3.jpg", 
     items: [
       { name: "Middle part with leave out", price: "€50,-" },
       { name: "Side part with leave out", price: "€50,-" },
@@ -46,7 +46,7 @@ export const PRICES: ServiceCategory[] = [
   {
     title: "Kinderhaarstijlen",
     // Image of cornrows for kids
-    image: "https://images.unsplash.com/photo-1624637651238-51f782390ba0?q=80&w=1000&auto=format&fit=crop", 
+    image: "/images/photo_1.jpg", 
     items: [
       { name: "Kinderdesigns", price: "v.a. €50,-", description: "Creatieve patronen voor kinderen" },
     ]
@@ -65,37 +65,37 @@ export const PORTFOLIO: PortfolioItem[] = [
     id: 1, 
     category: "Stitch", 
     title: "Precision Stitch", 
-    image: "https://images.unsplash.com/photo-1635368305786-07c39b97b102?q=80&w=1000&auto=format&fit=crop" 
+    image: "/images/photo_1.jpg" 
   },
   { 
     id: 2, 
     category: "Boho", 
     title: "Boho Curls", 
-    image: "https://images.unsplash.com/photo-1605497788044-5a90406410d7?q=80&w=1000&auto=format&fit=crop" 
+    image: "/images/photo_2.jpg" 
   },
   { 
     id: 3, 
     category: "Kids", 
     title: "Kids Cornrows", 
-    image: "https://images.unsplash.com/photo-1624637651238-51f782390ba0?q=80&w=1000&auto=format&fit=crop" 
+    image: "/images/photo_3.jpg" 
   },
   { 
     id: 4, 
     category: "Design", 
     title: "Freestyle Design", 
-    image: "https://images.unsplash.com/photo-1595188800762-b9b87ea20eb1?q=80&w=1000&auto=format&fit=crop" 
+    image: "/images/photo_1.jpg" 
   },
   { 
     id: 5, 
     category: "Weave", 
     title: "Sleek Ponytail", 
-    image: "https://images.unsplash.com/photo-1582095133179-bfd08d2fc6a8?q=80&w=1000&auto=format&fit=crop" 
+    image: "/images/photo_2.jpg" 
   },
   { 
     id: 6, 
     category: "Braids", 
     title: "Knotless Box Braids", 
-    image: "https://images.unsplash.com/photo-1606410333066-51259250005d?q=80&w=1000&auto=format&fit=crop" 
+    image: "/images/photo_3.jpg" 
   },
 ];
 
