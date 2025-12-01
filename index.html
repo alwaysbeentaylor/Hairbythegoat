@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hair by the GOAT | Luxe Braids & Weaves</title>
+    <meta name="description" content="Gespecialiseerd in Stitch Braids, Cornrows & Precision Black Hair Styling." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Lato"', 'sans-serif'],
+            },
+            colors: {
+              // Dark, rich aesthetics based on the iPhone screenshot
+              cocoa: {
+                100: '#E8DQD5',
+                200: '#Cabbaa',
+                300: '#A69588',
+                400: '#857468',
+                500: '#64544A', // Warm brown
+                600: '#4D3F38',
+                700: '#382D28',
+                800: '#261E1B',
+                900: '#1A1412', // Very dark espresso background
+              },
+              stone: {
+                50: '#fafaf9',
+                800: '#292524',
+                900: '#1c1917',
+                950: '#0c0a09',
+              },
+              gold: {
+                400: '#D4AF37', // Luxury Gold
+                500: '#B59428',
+                600: '#8A7018',
+              },
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      .no-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+      /* Custom selection color for that luxury feel */
+      ::selection {
+        background-color: #D4AF37;
+        color: #1A1412;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25"
+  }
+}
+</script>
+</head>
+  <body class="bg-cocoa-900 text-stone-200 antialiased">
+    <div id="root"></div>
+  </body>
+</html>
