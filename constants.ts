@@ -4,8 +4,8 @@ import { Instagram, Phone, MessageCircle } from 'lucide-react';
 export const BRAND_NAME = "Hair by the GOAT";
 export const TAGLINE = "Stitch Braids & Luxury Styling";
 
-// Logo placeholder (simulating a luxury goat logo)
-export const LOGO_URL = "https://cdn-icons-png.flaticon.com/512/1998/1998610.png"; 
+// Realistic Goat Head (The GOAT) - Close up portrait
+export const LOGO_URL = "https://images.unsplash.com/photo-1556950222-3c81b9576082?q=80&w=200&h=200&auto=format&fit=crop"; 
 
 export const PRICES: ServiceCategory[] = [
   {

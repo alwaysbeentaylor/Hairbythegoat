@@ -62,8 +62,14 @@ const App: React.FC = () => {
       <nav className="fixed top-0 left-0 right-0 z-40 bg-cocoa-900/90 backdrop-blur-xl border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            {/* Goat Logo */}
-            <img src={LOGO_URL} alt="Goat Logo" className="h-10 w-10 object-contain invert brightness-0 filter sepia-[.5] hue-rotate-[10deg] saturate-[3]" />
+            {/* Goat Logo - Realistic with gold border */}
+            <div className="relative">
+              <img 
+                src={LOGO_URL} 
+                alt="Goat Logo" 
+                className="h-12 w-12 object-cover rounded-full border border-gold-500/50 shadow-lg" 
+              />
+            </div>
             <div className="font-serif text-xl md:text-2xl font-bold tracking-tighter text-white">
               HAIR BY THE <span className="text-gold-400">GOAT</span>.
             </div>
@@ -365,8 +371,9 @@ const App: React.FC = () => {
       <footer className="bg-stone-950 text-stone-500 py-16 px-6 border-t border-white/5">
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 text-sm">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-6">
-                 <img src={LOGO_URL} alt="Logo" className="h-8 w-8 object-contain invert brightness-0 filter sepia-[.5] hue-rotate-[10deg] saturate-[3]" />
+            <div className="flex items-center gap-3 mb-6">
+                 {/* Realistic Goat Head Logo in Footer */}
+                 <img src={LOGO_URL} alt="Logo" className="h-10 w-10 object-cover rounded-full border border-gold-500/30" />
                 <div className="font-serif text-2xl text-white">HAIR BY THE <span className="text-gold-500">GOAT</span>.</div>
             </div>
             
